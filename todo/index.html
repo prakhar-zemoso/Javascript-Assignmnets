@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="todo-container">
+        <div class="status">
+            <h1>No Status</h1>
+            <button id="add_btn" data-target-modal="#todo_form">+ Add Todo</button>
+        </div>
+        <div class="status">
+            <h1>Not Started</h1>
+        </div>
+        <div class="status">
+            <h1>In Progress</h1>
+        </div>
+        <div class="status">
+            <h1>Completed</h1>
+        </div>
+
+    </div>
+    <div class="table-details">
+        <div class="header">
+          <h2 id="order-header">&nbsp;</h2>
+          <button
+            data-close-button
+            class="closeButton"
+            id="btn"
+            onclick="closeTableDetails(event)"
+          >
+            &times;
+          </button>
+        </div>
+        <div class="details">
+          <table id="table-items" cellspacing="15" width="5"></table>
+        </div>
+        <div class="billing">
+          <div class="total">
+            Total :
+            <div id="total-price"></div>
+          </div>
+          <button id="generateBill" onclick="generateBill(event)">
+            CLOSE SESSION(Generate Bill)
+          </button>
+        </div>
+    
+</body>
+</html>

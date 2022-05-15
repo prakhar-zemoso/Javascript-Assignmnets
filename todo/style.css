@@ -1,0 +1,48 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-container{
+    width: 1000px;
+    height: 80vh;
+    display: flex;
+}
+.status{
+    width: 25%;
+    background-color: azure;
+    position: relative;
+    padding: 60px 1rem 0.5rem
+}
+
+.status:nth-child(even){
+    background-color: antiquewhite;
+}
+
+.status h1{
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    background-color: blue;
+    color: aliceblue;
+    margin: 0;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+
+#add_btn{
+    padding: 00.5rem;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#add_btn:hover{
+    background-color: #aaa;
+}
